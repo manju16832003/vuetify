@@ -64,7 +64,7 @@ export default {
         }
       })
 
-      this.inputValue = this.value || this.steps[0].step || 1
+      this.inputValue = this.value || this.steps[0] && this.steps[0].step || 1
 
       // TODO: Figure out a way to fix this hack
       // No transition before booted
